@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Text Counter</title>
+  </head>
+  <body>
+    <div class="presentation">
+      <h1>Text Element Counter</h1>
+      <p>Track repetitions in your text</p>
+    </div>
+
+    <div class="search-parameter">
+      <form action="get">
+        <label for="s-parameter">Insert search parameter</label>
+        <div class="material-symbols-outlined">help</div>
+        <span class="hint">Use comma to sepparate more than one parameter</span>
+        <br />
+        <input type="text" id="search-parameter" name="searchParameter" />
+      </form>
+    </div>
+    <section class="text-input">
+      <div class="input">
+        <form action="get">
+          <label for="i-text">Insert your text</label><br />
+          <textarea
+            id="text-input"
+            name="textInput"
+            rows="3"
+            cols="30"
+          ></textarea>
+        </form>
+      </div>
+    </section>
+
+    <div class="buttonResult">
+      <button type="submit" id="submitButton">Get Ocurrences</button>
+    </div>
+
+    <section class="ocurrences">
+      <h2>Ocurrences</h2>
+      <div class="ocurrencesPositioning">
+        <div class="ocurrencesParameter"></div>
+        <div class="ocurrencesQuantity"></div>
+      </div>
+    </section>
+    <footer>
+      Developed by Eduardo Barbosa -
+      <a href="https://github.com/edubcm" target="_blank">Github</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
